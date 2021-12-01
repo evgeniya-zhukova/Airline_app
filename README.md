@@ -4,4 +4,4 @@
 C#
 
 ## Description:
-The application is an individual project.
+The application is a group project.
