@@ -41,11 +41,13 @@ namespace AirlineApp
             if (int.TryParse(textBox1.Text, out maxSeats) && (maxSeats > 0) && origin != "" && destination != "")
             {
                 aCoord.addFlight(origin, destination, maxSeats);
+                label5.ForeColor = Color.Green;
                 label5.Text = "Flight was added successfully.";
             }
             else
             {
-                label5.Text = "Flight was not added.";
+                label5.ForeColor = Color.Red;
+                label5.Text = "Flight was not added. All fields are required.";
             }
         }
 
