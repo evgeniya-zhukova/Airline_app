@@ -10,18 +10,12 @@ namespace AirlineApp
     {
 
         /*
-
+        
+        Team:
         Rezwan Tarin
-        ID: 101198704
-
         Farhan Mohamed Thasleem Mohamed
-        ID: 101177621
-
         Peng Qiu
-        ID: 101230649
-
         Evgeniya Zhukova
-        ID: 101239316
 
         */
 

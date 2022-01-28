@@ -4,4 +4,4 @@
 C#
 
 ## Description:
-The application is a group project.
+This application is a group project. The app allows to register airline passengers to corresponding flights.

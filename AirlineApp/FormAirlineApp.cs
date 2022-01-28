@@ -32,6 +32,8 @@ namespace AirlineApp
         {
             FormMenuCustomer form = new FormMenuCustomer(aCoord, this);
             form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call Flight Menu to display
@@ -39,6 +41,8 @@ namespace AirlineApp
         { 
             FormMenuFlight form = new FormMenuFlight(aCoord, this);
             form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call Booking Menu to display
@@ -46,6 +50,8 @@ namespace AirlineApp
         { 
             FormMenuBooking form = new FormMenuBooking(aCoord, this);
             form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //buton Exit
