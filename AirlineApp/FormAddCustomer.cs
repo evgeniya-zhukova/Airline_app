@@ -41,11 +41,13 @@ namespace AirlineApp
             if (fname != "" && lname != "" && phone != "")
             {
                 aCoord.addCustomer(fname, lname, phone);
+                label5.ForeColor = Color.Green;
                 label5.Text = "Customer " + fname + " " + lname + " was added successfully.";
             }
             else
             {
-                label5.Text = "Customer " + fname + " " + lname + " was not added.";
+                label5.ForeColor = Color.Red;
+                label5.Text = "Customer " + fname + " " + lname + " was not added. All fields are required.";
             }
         }
 
@@ -66,6 +68,11 @@ namespace AirlineApp
         }
 
         private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
         {
 
         }

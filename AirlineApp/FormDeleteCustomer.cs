@@ -46,11 +46,13 @@ namespace AirlineApp
             //check if input not integer
             if (!int.TryParse(textBox2.Text, out id))
             {
+                label3.ForeColor = Color.Red;
                 label3.Text = "Please enter a valid choice.";
             }
             //delete customer
             else if (aCoord.deleteCustomer(id))
             {
+                label3.ForeColor = Color.Green;
                 label3.Text = "Customer with id " + id + " was deleted successfully.";
                 dataGridView1.Rows.Clear();
                 for (int i = 1; i <= aCoord.getMaxCustomers(); i++)
@@ -64,6 +66,7 @@ namespace AirlineApp
             }
             else
             {
+                label3.ForeColor = Color.Red;
                 label3.Text = "Customer with id " + id + " was not found.";
             }
         }
