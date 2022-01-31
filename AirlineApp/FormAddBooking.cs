@@ -65,11 +65,13 @@ namespace AirlineApp
             //check if input not integer
             if (!int.TryParse(textBox2.Text, out flightId))
             {
+                label4.ForeColor = Color.Red;
                 label4.Text = "Please enter a valid choice.";
             }
             //check if input not integer
             if (!int.TryParse(textBox4.Text, out customerId))
             {
+                label5.ForeColor = Color.Red;
                 label5.Text = "Please enter a valid choice.";
             }
             //check if customer ID, flight ID exist and empty seats > 0
@@ -77,10 +79,12 @@ namespace AirlineApp
                 && (aCoord.getEmptySeats(flightId) > 0) && aCoord.addBooking(flightId, customerId)
                 && aCoord.addPassenger(flightId, customerId))
             {
-                label4.Text = "Booking was added successful.";
+                label4.ForeColor = Color.Green;
+                label4.Text = "Booking was added successfully.";
             }
             else
             {
+                label4.ForeColor = Color.Red;
                 label4.Text = "Booking was not added.";
             }
         }
