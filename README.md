@@ -4,7 +4,7 @@
 C#
 
 ## Description:
-This application is a group project. The app allows to register airline passengers to corresponding flights.
+This application is a group project, Airline app with a simple GUI. The app allows add, view, delete information about airline passengers and flights, as well as register passengers to corresponding flights.
 
 ## Screenshots:
 
