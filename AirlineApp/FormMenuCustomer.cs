@@ -35,21 +35,27 @@ namespace AirlineApp
         private void buttonAddCustomer_Click(object sender, EventArgs e)
         {
             FormAddCustomer form = new FormAddCustomer(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form View Customers to display
         private void buttonViewCustomers_Click(object sender, EventArgs e)
         { 
             FormViewCustomer form = new FormViewCustomer(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form Delete Customers to display
         private void buttonDeleteCustomers_Click(object sender, EventArgs e)
         {
             FormDeleteCustomer form = new FormDeleteCustomer(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //back to caller, close current form

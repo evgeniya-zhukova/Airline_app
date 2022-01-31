@@ -35,21 +35,27 @@ namespace AirlineApp
         private void buttonAddBooking_Click(object sender, EventArgs e)
         {
             FormAddBooking form = new FormAddBooking(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form View Bookings to display 
         private void buttonViewBookings_Click(object sender, EventArgs e)
         {
             FormViewBooking form = new FormViewBooking(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form Delete Bookings to display 
         private void buttonDeleteBooking_Click(object sender, EventArgs e)
         {
             FormDeleteBooking form = new FormDeleteBooking(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //back to caller, close current form

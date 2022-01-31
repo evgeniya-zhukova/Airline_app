@@ -35,28 +35,36 @@ namespace AirlineApp
         private void buttonAdd_Click(object sender, EventArgs e)
         {
             FormAddFlight form = new FormAddFlight(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form View Flight to display 
         private void buttonView_Click(object sender, EventArgs e)
         {
             FormViewFlight form = new FormViewFlight(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form View a Particular Flight to display 
         private void buttonPartFl_Click(object sender, EventArgs e)
         {
             FormViewParticularFlight form = new FormViewParticularFlight(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //call form Delete Flight to display 
         private void buttonDelete_Click(object sender, EventArgs e)
         {
             FormDeleteFlight form = new FormDeleteFlight(aCoord, this);
-            form.ShowDialog();
+            form.Show();
+            //hide current form
+            this.Hide();
         }
 
         //back to caller, close current form
