@@ -1,7 +1,7 @@
 # Airline app
 
 ## Used Technologies:
-C#
+C#, Windows Forms
 
 ## Description:
 This application is a group project, Airline app with a simple GUI. The app allows add, view, delete information about airline passengers and flights, as well as register passengers to corresponding flights.
